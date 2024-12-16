@@ -1,0 +1,464 @@
+/* Estilo general para todo el componente */
+:host {
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos (título y contenido) de arriba hacia abajo */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    background: linear-gradient(to bottom, #2222e6, #000000);
+    /* Degradado de azul marino a negro */
+}
+
+h1{
+    color: #fffdfd;
+}
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    /* Centra la imagen y el texto verticalmente */
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-text-container img {
+    width: 150px;
+    /* Define un tamaño pequeño para la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+}
+
+.text p {
+    line-height: 1.6;
+    color: #fffdfd;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+        /* Cambia a disposición vertical en pantallas pequeñas */
+        align-items: center;
+        /* Centra todos los elementos */
+        text-align: center;
+    }
+
+    .image-text-container img {
+        width: 100px;
+        /* Reduce aún más el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-text-container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* Centra la imagen y el texto verticalmente */
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-text-container2 img {
+    width: 150px;
+    /* Define un tamaño pequeño para la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+}
+
+.text2 p {
+    line-height: 1.6;
+    color: #fffdfd;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+        /* Cambia a disposición vertical en pantallas pequeñas */
+        align-items: center;
+        /* Centra todos los elementos */
+        text-align: center;
+    }
+
+    .image-text-container img {
+        width: 100px;
+        /* Reduce aún más el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+
+
+/* Estilo para el contenedor que tiene la imagen y el texto */
+.content2 {
+    display: flex;
+    /* Alinea la imagen y el texto en una fila */
+    align-items: center;
+    /* Alinea la imagen y el texto al centro verticalmente */
+    justify-content: flex-start;
+    /* Alinea todo el contenido hacia la izquierda */
+    flex-direction: row;
+    /* Coloca el texto a la izquierda y la imagen a la derecha */
+    margin-top: 60px;
+    /* Añade un margen superior para separar del contenido anterior */
+}
+
+/* Estilo para la imagen */
+.image {
+    width: 320px;
+    /* Tamaño de la imagen */
+    height: 320px;
+    /* Tamaño de la imagen */
+    margin-left: 160px;
+    /* Espacio entre la imagen y el texto */
+}
+
+/* Contenedor de texto en la segunda sección */
+.text-container2 {
+    display: flex;
+    flex-direction: column;
+    /* Apila el h2 y el p en una columna */
+    justify-content: flex-start;
+    /* Alinea el contenido hacia la parte superior */
+    align-items: flex-start;
+    /* Alinea el texto a la izquierda */
+    max-width: 500px;
+    /* Limita el ancho máximo del texto */
+}
+
+/* Estilo para el título del texto (h2) */
+h2 {
+    font-size: 2rem;
+    /* Tamaño del texto */
+    color: #ffffff;
+    /* Color blanco para el título */
+    font-family: Arial, sans-serif;
+    /* Fuente limpia */
+    margin: 0 0 10px;
+    /* Márgenes para separar el título del texto */
+}
+
+/* Estilo para el texto */
+.text {
+    font-size: 1.2rem;
+    /* Tamaño del texto */
+    color: #ffffff;
+    /* Texto blanco */
+    font-family: Arial, sans-serif;
+    /* Fuente limpia */
+    text-align: left;
+    /* Centra el texto dentro del contenedor */
+}
+
+/* Contenedor de tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Tarjetas */
+.card {
+    flex: 1 1 calc(20% - 15px);
+    /* 4 tarjetas por fila en pantallas grandes */
+    max-width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #000115;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(253, 251, 251, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.more-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.toggle-label {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.toggle-label:hover {
+    background-color: #2600ff;
+}
+
+.toggle-button:checked~.more-text {
+    display: block;
+}
+
+.toggle-button:checked~.toggle-label {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px);
+        /* 3 tarjetas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 tarjetas por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+        /* 1 tarjeta por fila */
+        max-width: 100%;
+        /* Tarjeta ocupa el 100% del ancho */
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    /* Tamaño del texto */
+    color: #ffffff;
+    /* Color blanco para el título */
+    font-family: Arial, sans-serif;
+    /* Fuente limpia */
+    margin: 0 0 10px;
+    /* Márgenes para separar el título del texto */
+}
+
+h4 {
+    color: #ffffff;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+/*carrusel*/
+.slider {
+    width: 100;
+    height: 500px;
+    overflow: hidden;
+}
+
+figure {
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+}
+
+.slide {
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    65% {
+        left: -300%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    74% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/*formulario*/
+.form-container {
+    background-color: rgb(10, 5, 69);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(245, 242, 242, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #f8f2f2;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #4d90fe;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button:active {
+    background-color: #3e8e41;
+}
